@@ -1,0 +1,16 @@
+diff --git a/vendor/facebook/php-business-sdk/src/FacebookAds/Object/ServerSide/AdsPixelSettings.php b/vendor/facebook/php-business-sdk/src/FacebookAds/Object/ServerSide/AdsPixelSettings.php
+index eef7afe..3546f9b 100644
+--- a/vendor/facebook/php-business-sdk/src/FacebookAds/Object/ServerSide/AdsPixelSettings.php
++++ b/vendor/facebook/php-business-sdk/src/FacebookAds/Object/ServerSide/AdsPixelSettings.php
+@@ -151,7 +151,7 @@ class AdsPixelSettings implements ArrayAccess {
+    * @param integer $offset Offset
+    * @return boolean
+    */
+-  public function offsetExists($offset) {
++  public function offsetExists($offset) :bool {
+     return isset($this->container[$offset]);
+   }
+
+--
+2.34.1
+
